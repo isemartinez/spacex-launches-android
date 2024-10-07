@@ -1,5 +1,6 @@
 [versions]
 activityCompose = "1.9.2"
+archCoreTesting="2.2.0"
 agp = "8.3.2"
 appcompat = "1.7.0"
 coil = "2.4.0"
@@ -14,11 +15,12 @@ hilt = "2.47"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 kotlin = "1.9.22"
+kotlinxCoroutinesTest = "1.6.0"
 kspVersion = "1.9.22-1.0.18"
 lifecycleRuntimeKtx = "2.8.6"
 lottie = "6.5.2"
 hiltNavigation = "1.0.0"
-material = "1.12.0"
+testCore = "1.6.1"
 navigation = "2.6.0"
 okhttp = "4.10.0"
 retrofit = "2.9.0"
@@ -72,10 +74,15 @@ okhttp-loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-in
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
 
 # Testing
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-core = { group = "androidx.test", name = "core", version.ref = "testCore" }
+androidx-rules = { group = "androidx.test", name = "rules", version.ref = "testCore" }
+androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCoreTesting" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 io-coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }

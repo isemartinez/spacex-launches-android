@@ -21,6 +21,8 @@ import com.spacex.launches.data.mappers.entitypresentation.EntityToPresentationM
 import com.spacex.launches.data.network.RetrofitClient
 import com.spacex.launches.data.repository.SpaceXRepository
 import com.spacex.launches.data.repository.SpaceXRepositoryImpl
+import com.spacex.launches.data.repository.network.NetworkRepository
+import com.spacex.launches.data.repository.network.NetworkRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -152,5 +154,11 @@ class DataModule {
             rocketDao = rocketDao,
             launchPadDao = launchPadDao
         )
+    }
+
+    @Provides
+    @Singleton
+    fun providesNetworkRepository(@ApplicationContext context: Context): NetworkRepository {
+        return NetworkRepositoryImpl(context)
     }
 }
