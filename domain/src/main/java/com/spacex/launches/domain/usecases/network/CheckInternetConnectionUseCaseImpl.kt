@@ -1,6 +1,6 @@
 package com.spacex.launches.domain.usecases.network
 
-import com.spacex.launches.domain.repository.NetworkRepository
+import com.spacex.launches.data.repository.network.NetworkRepository
 
 class CheckInternetConnectionUseCaseImpl(private val networkRepository: NetworkRepository) :
     CheckInternetConnectionUseCase {
